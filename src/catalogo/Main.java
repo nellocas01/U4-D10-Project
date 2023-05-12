@@ -41,12 +41,10 @@ public class Main {
 				.collect(Collectors.toList());
 	}
 
-	/*
-	 * public List<Libri> ricercaAutore(String autore){ return
-	 * archivio.values().stream().filter(book -> book intanceof Libri).map(book ->
-	 * (Libri)book).filter(book ->
-	 * autore.equals(book.getAutore())).collect(Collectors.toList()); }
-	 */
+	public List<Libri> ricercaAutore(String autore) {
+		return archivio.values().stream().filter(book -> book instanceof Libri).map(book -> (Libri) book)
+				.filter(book -> autore.equals(book.getAutore())).collect(Collectors.toList());
+	}
 
 	public void salvataggio() throws IOException {
 		String nomeFile = "";
@@ -92,10 +90,11 @@ public class Main {
 			catalogo.salvataggio();
 			catalogo.caricamento();
 
-			// List ricerca autore
+			List<Libri> ricercaAutore = catalogo.ricercaAutore(" Paolo Sorrentino ");
+			ricercaAutore.forEach(autor -> System.out.println("L'autore è: " + autor.getAutore()));
 
 		} catch (IOException e) {
-			logger.error("Errore ", e);
+			logger.error("Errore ", e.getMessage());
 		}
 
 	}

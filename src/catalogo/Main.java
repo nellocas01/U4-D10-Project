@@ -69,10 +69,9 @@ public class Main {
 
 		File file = new File(FILE);
 
-		@SuppressWarnings("unused")
 		String nomeFile = FileUtils.readFileToString(file, "UTF-8");
 
-		logger.info("Caricamento file " + FILE);
+		logger.info("Caricamento file " + nomeFile);
 	}
 
 	public static void main(String[] args) {

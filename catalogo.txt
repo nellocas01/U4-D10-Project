@@ -1,1 +1,1 @@
-catalogo.Libri 984lo3 Napul3 2023350 Paolo Sorrentino Calcio#catalogo.Libri 4651sqa Sorrisi&Canzoni 2006103
+catalogo.Libri Codice ISBN:  984lo3 -Titolo del libro: Napul3 -Anno di pubblicazione: 2023-Numero di pagine: 350-Autore:  Paolo Sorrentino -Genere: Calcio#catalogo.Libri Codice ISBN:  4651sqa -Titolo del libro: Sorrisi&Canzoni -Anno di pubblicazione: 2006-Numero di pagine: 103-Autore: -Genere: 

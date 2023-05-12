@@ -69,7 +69,8 @@ public class Libri {
 	}
 
 	public static String toString(Libri libro) {
-		return Libri.class.getName() + libro.codiceISBN + libro.titolo + libro.numPagine + libro.annoPubblicazione
-				+ libro.autore + libro.genere;
+		return Libri.class.getName() + " Codice ISBN: " + libro.codiceISBN + "-Titolo del libro: " + libro.titolo
+				+ "-Anno di pubblicazione: " + libro.numPagine + "-Numero di pagine: " + libro.annoPubblicazione
+				+ "-Autore: " + libro.autore + "-Genere: " + libro.genere;
 	}
 }

@@ -20,7 +20,8 @@ public class Riviste extends Libri {
 	}
 
 	public static String toString(Riviste rivista) {
-		return Riviste.class.getName() + rivista.codiceISBN + rivista.titolo + rivista.numPagine
+		return Riviste.class.getName() + " Codice ISBN: " + rivista.codiceISBN + "-Titolo rivista: " + rivista.titolo
+				+ "-Numero pagine rivista: " + rivista.numPagine + "-Anno prubblicazione rivista: "
 				+ rivista.annoPubblicazione;
 	}
 }
